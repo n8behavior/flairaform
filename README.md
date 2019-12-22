@@ -19,13 +19,13 @@ If you want to hack on this codebase, here's a way to setup an environment that 
 
 ### Go
 
-On Ubuntu, this also gets you there
+On Ubuntu, this gets you there
 
 `sudo apt install golang`
 
 Use the default GOPATH/GOROOT, just easier
 
-If you have use a non-opensource OS, I'm sorry #feelsbadman
+If you have to use a non-opensource OS, I'm sorry #feelsbadman
 
 ;)
 
