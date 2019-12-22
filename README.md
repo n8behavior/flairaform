@@ -4,6 +4,8 @@
 
 ## Overview
 
+_NOTE: This is still a WIP.  Stay tuned..._
+
 This project is an exploration of using [Terraform](https://www.terraform.io/) to manage a smart home.
 
 To start we will control the [Flair Smart Vent System](https://flair.co/) which is comprised of several (_~50 in my case_) IoT devices such as
@@ -53,5 +55,3 @@ go build -o terraform-provider-flair
 terraform init
 terraform plan
 ```
-
-See the [golang docker image](https://hub.docker.com/_/golang) for more details
