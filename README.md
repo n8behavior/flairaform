@@ -15,13 +15,19 @@ This project extends the [Terraform SDK](https://www.terraform.io/docs/extend/pl
 
 ## Setup
 
-If you want to hack on this codebase, here's a way to setup an environment that is know to work.  Feel free to  walk your own path :)
+If you want to hack on this codebase, here's a way to setup an environment that is known to work.  Feel free to  walk your own path :)
 
 ### Go
 
-This project use Go from a Docker image, so not much to setup :D
+On Ubuntu, this also gets you there
 
-[hub.docker.com/\_/golang](https://hub.docker.com/_/golang)
+`sudo apt install golang`
+
+Use the default GOPATH/GOROOT, just easier
+
+If you have use a non-opensource OS, I'm sorry #feelsbadman
+
+;)
 
 ### Terraform
 
@@ -39,10 +45,13 @@ _NOTE: I have not received any consideration from nor do I have any relationship
 
 Official builds for this project are done with the setup above and [GitHub Actions](https://help.github.com/en/actions)
 
-To build locally, after checkout do...
+To build/test locally, after checkout do...
 
 ```
-docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp golang:1.8 go build -v
+go get
+go build -o terraform-provider-flair
+terraform init
+terraform plan
 ```
 
 See the [golang docker image](https://hub.docker.com/_/golang) for more details
